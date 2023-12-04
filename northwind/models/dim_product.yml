@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: dim_product
+    description: one row per product details
+    columns:
+
+      - name: productkey
+        description: dimension key
+        tests:
+        - not_null
+        - unique
+      - name: productid
+        description: primary key from source
+        tests:
+          - not_null
+          - unique 
